@@ -114,10 +114,18 @@ input[type=text] {
   
 }
 
-/* Track 
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg,gray,black);
+  border-radius: 3px;
 }
  
 /* Handle 
@@ -157,6 +165,7 @@ button{
 }*/
 .maimMenu{
   margin-top: 10px;
+  border: 2px;
 }
 .mainMenu a{
 color: #951c49;
@@ -169,11 +178,11 @@ text-align: center;
   font-size: 1.8em;
 }
 @media(min-width: 775px){
-  .mainMenu{
+.mainMenu{
     display: none;
-    position: absolute;
+   /* position: absolute;
   top: 30%;
-  right: 5%;
+  right: 5%;*/
   }
 }
 
@@ -319,7 +328,7 @@ h2{
 }*/
 
 #header-nav{
-  width: 90%
+  width: 50%
 
 }
 }
@@ -361,14 +370,21 @@ h2{
         <h1>&#9776;</h1>
         <a href="#mainMenu"></a>
       </button>
-      <div id="collapse">
+      
+      <div>
         <ul class="mainMenu">
-          <li><a href="#first"><br class="hidden-XS"> chicken</a></li>
+        <a href="#first"><br class="hidden-XS"> chicken</a>
+        
+        <a href="#second"><br class="hidden-XS"> beef</a>
+        
+        <a href="#third"><br class="hidden-XS"> sushi</a></ul></div></nav>
+        <!--
+          <li>
           <li><a href="#second"><br class="hidden-XS">beef</a></li>
           <li><a href="#third"><br class="hidden-XS">sushi</a></li>
-        </ul>
-      </div>
-      </nav>
+        -->
+      
+      
       <!--<nav class="navbar-tab navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-expanded="false" aria-label="Toggle navigation">
       <span class="sr-only"></span>
